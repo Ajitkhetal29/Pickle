@@ -9,12 +9,7 @@ def loadData():
         DataFile = open (filename , 'wb')
         pickle.dump(db[keys],DataFile)
         DataFile.close()
-        readFile = open (filename, 'rb')
-        db = pickle.load(readFile)
-        for keys in db:
-            print(keys, '=>', db[keys])
-        print("#######################")
-        readFile.close()
+        
     dbfile.close()
 
 
