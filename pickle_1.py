@@ -8,7 +8,7 @@ def loadData():
         filename = f"{keys[0:5]}.pkl"
         DataFile = open (filename , 'wb')
         pickle.dump(db[keys],DataFile)
-        
+        print("###########")
     dbfile.close()
 
 
